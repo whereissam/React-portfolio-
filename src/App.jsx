@@ -12,7 +12,7 @@ import Works from './components/Works'
 import Testimonials from './components/Testimonials'
 import Contact from './components/Contact'
 // import { Menu } from '@material-ui/core'
-import Menu from './components/Menu' 
+import Menu from './components/MenuList' 
 // const CameraController = () => {
 //   const { camera, gl } = useThree();
 //   useEffect(
@@ -56,6 +56,10 @@ import Menu from './components/Menu'
 // }
 
 export default function App() {
+
+  
+
+  // const [munuName, setMenuname] = useState(state)
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
