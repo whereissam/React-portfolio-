@@ -1,7 +1,8 @@
 // import ReactDOM from 'react-dom'
-import React, { useRef, useState, useEffect } from 'react'
-import { Canvas, useFrame, useThree } from '@react-three/fiber'
-import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls'
+import React, { useState } from 'react'
+// import React, { useRef, useState, useEffect } from 'react'
+// import { Canvas, useFrame, useThree } from '@react-three/fiber'
+// import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls'
 // import * as THREE from "three"
 import './App.scss'
 import Navbar from './components/Navbar'
@@ -10,8 +11,7 @@ import Portfolio from './components/Portfolio'
 import Works from './components/Works'
 import Testimonials from './components/Testimonials'
 import Contact from './components/Contact'
-
-
+ 
 // const CameraController = () => {
 //   const { camera, gl } = useThree();
 //   useEffect(
@@ -55,9 +55,11 @@ import Contact from './components/Contact'
 // }
 
 export default function App() {
+  const [menuOpen, setMenuOpen] = useState(false)
+
   return (
     <div className='app'>
-      <Navbar></Navbar>
+      <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}></Navbar>
       <div className='section'>
         <Intro></Intro>
         <Portfolio />
