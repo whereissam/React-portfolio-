@@ -6,6 +6,8 @@
     "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
     "@react-three/fiber": "^7.0.6",
+    "itype": "^3.0.1",
+    "ityped": "^1.0.3",
     "node-sass": "^6.0.1",
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
