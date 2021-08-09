@@ -11,7 +11,8 @@ import Portfolio from './components/Portfolio'
 import Works from './components/Works'
 import Testimonials from './components/Testimonials'
 import Contact from './components/Contact'
- 
+// import { Menu } from '@material-ui/core'
+import Menu from './components/Menu' 
 // const CameraController = () => {
 //   const { camera, gl } = useThree();
 //   useEffect(
@@ -60,6 +61,7 @@ export default function App() {
   return (
     <div className='app'>
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}></Navbar>
+      <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}></Menu>
       <div className='section'>
         <Intro></Intro>
         <Portfolio />
