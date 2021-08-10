@@ -2,13 +2,13 @@ import React from 'react'
 import './navbar.scss'
 import {Person, Mail} from "@material-ui/icons"
 export default function Navbar({menuOpen, setMenuOpen}) {
-        console.log(menuOpen)
+        // console.log(menuOpen)
     return (
         <div className={'navbar ' + (menuOpen && 'active')}>
             {/* if menuOpen is true, add active*/}
             <div className='wrapper'>
                 <div className='left'>
-                    <a href="#intro" className='logo'>Logo.</a>
+                    <a href="#home" className='logo'>Logo.</a>
                     <div className='itemContainer'>
                         <Person className='icon'></Person>
                         <span>+11 111 11 11</span>
