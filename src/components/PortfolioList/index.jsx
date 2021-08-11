@@ -7,8 +7,9 @@ export default function PortfolioList({title, active, setSelected, id}) {
     return (
         <li 
             className={active ? 'portfolioList active' : "portfolioList"} 
-            onMouseEnter={()=>setSelected(id)} 
-            onMouseLeave={()=>setSelected('')}
+            onClick={()=>setSelected(id)} 
+            // onMouseEnter={()=>setSelected(id)} 
+            // onMouseLeave={()=>setSelected('')}
         >
             {title}
         </li>

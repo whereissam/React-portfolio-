@@ -9,7 +9,7 @@ import {
     contentPortfolio
 } from "../../data"
 export default function Portfolio() {
-    const [selected, setSelected] = useState("")
+    const [selected, setSelected] = useState("featured")
     const [data, setData] = useState([])
     
     const list = [
@@ -20,6 +20,10 @@ export default function Portfolio() {
         {
             id: 'web',
             title: "Web App"
+        },
+        {
+            id: 'mobile',
+            title: "Mobile App"
         },
         {
             id: 'designing',
@@ -59,20 +63,20 @@ export default function Portfolio() {
             <h1>Portfolio</h1>
             <ul>           
                {
-                   list.map((item)=>(
+                   list.map((item, index)=>(
                        <PortfolioList 
                             title={item.title} 
                             active={selected === item.id} 
                             setSelected={setSelected} 
                             id={item.id}
-                            key={item.id}
+                            key={index}
                         />
                 ))}
             </ul> 
             <div className="container">
                 {
                     data.map((d)=>(
-                        <div className="item">
+                        <div className="item" key={d.id}>
                             <img src={d.img} alt="" />
                             <h3>{d.title} </h3>
                         </div>

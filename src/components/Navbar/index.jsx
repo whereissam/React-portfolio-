@@ -8,14 +8,14 @@ export default function Navbar({menuOpen, setMenuOpen}) {
             {/* if menuOpen is true, add active*/}
             <div className='wrapper'>
                 <div className='left'>
-                    <a href="#home" className='logo'>Logo.</a>
+                    <a href="#home" className='logo'>Sam.</a>
                     <div className='itemContainer'>
                         <Person className='icon'></Person>
                         <span>+11 111 11 11</span>
                     </div>
                     <div className="itemContainer">
                         <Mail className='icon'></Mail>
-                        <span>111@logo.com</span>
+                        <span>sam135642@gmail.com</span>
                     </div>
                 </div>
             <div className='right'>
