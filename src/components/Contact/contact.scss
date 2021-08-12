@@ -29,6 +29,10 @@
     align-items: center;
     justify-content: center;
 
+    @include mobile {
+      transform: translate(0, -30px);
+    }
+
     h2 {
       font-size: 30px;
     }
@@ -40,6 +44,10 @@
       flex-direction: column;
       align-items: center;
       justify-content: space-around;
+
+      @include mobile {
+        height: 60%;
+      }
 
       input {
         width: 300px;
